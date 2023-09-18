@@ -421,7 +421,7 @@
       align-items: center;
       gap: 30px;
     }
-    
+   
   }
   @media (min-width: 1200px) {
   
@@ -731,5 +731,23 @@ form{
     padding: 10px;
   }
   .contacth1{font-size: 30px;}
+  
+}
+.hero-banner3{display: none;}
+@media (max-width:960px) {
+  .hero-banner{
+    order: 1;
+  }
+  .hero-banner3{display: block;}
+  .hero-content{
+    order: 1;
+  }
+  .container .hero-banner:nth-of-type(1) {
+    order: 1;
+  }
+  .hero-banner2{display: none;}
+  .container .hero-content:nth-of-type(2) {
+    order: 2;
+  }
   
 }
