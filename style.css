@@ -271,6 +271,7 @@
     margin-inline: auto;
     margin-block-start: 20px;
   }
+  
   @media (min-width: 575px) {
     .h1{
         font-size: 30px;
@@ -298,6 +299,7 @@
       display: flex;
       gap: 15px;
     }
+    
 }
   @media (min-width: 768px) {
     :root {
@@ -334,7 +336,7 @@
   }
   
   @media (min-width: 992px) {
-  
+    
     :root {
   
       --fs-1: 5rem;
@@ -419,7 +421,7 @@
       align-items: center;
       gap: 30px;
     }
-  
+    
   }
   @media (min-width: 1200px) {
   
@@ -608,6 +610,9 @@ footer{
     margin: 20px;
     margin-top: 50px;  
     background-color: var( --cultured-2);
+}
+.section3{
+  margin-top: 100px;
 }
 
 .contacth1{
