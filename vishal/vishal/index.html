@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiFoster</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+    
+  <header class="header" data-header>
+    <div class="container">
+
+      <img src="/logo-transparent-png.png" alt="" class="logo">
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link" data-nav-link>Services</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">We are more than happy to provide IT services at best in market pricing.</h1>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+          <figure class="hero-banner">
+            <img src="/banner.jpeg" width="750" height="700" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+      
+      
+      <div class="container2">
+        
+        <div class="card" style="--clr: black">
+            <div class="img-box">
+                <img
+                    src="/images/backup.png">
+            </div>
+            <div class="content">
+                <h2>Backup</h2>
+                <p>
+                  Pocket friendly Cloud Backup on Microsoft Azure and on premises backup.
+                  Microsoft Azure offers a cost-effective, secure, one-click backup solution that scalable based on 
+                  your backup storage needs.
+                  On premises Backup solution can be fulfilled using NAS devices.
+                  
+                </p>
+            </div>
+        </div>
+        <div class="card" style="--clr: black">
+            <div class="img-box">
+                <img
+                src="/images/digital-marketing.webp">
+            </div>
+            <div class="content">
+                <h2>Digital Marketing</h2>
+                <p>
+                  (Facebook, Google, LinkedIn, Bulk Emailing, Bulk SMS, leads generation)
+                  It can be weekly posts for Organizations presence or leads generation, we will put all our efforts 
+                  into keeping your clients and partners connected with you.
+                </p>
+              
+            </div>
+        </div>
+        <div class="card" style="--clr: black">
+            <div class="img-box">
+                <img
+                src="/images/website.png">
+            </div>
+            <div class="content">
+                <h2>IT setup revamping</h2>
+                <p>
+                  We can do IT setup for your organization as per your needs. Firewalls, switches, servers, bulk OS 
+                  Installations, Email configurations, OFC 365 setup, Email Migration, biometric attendance and 
+                  CCTV installation.
+                </p>
+              
+            </div>
+        </div>
+        <div class="card" style="--clr: black">
+            <div class="img-box">
+                <img
+                src="/images/website.png">
+            </div>
+            <div class="content">
+                <h2>Website Development</h2>
+                <p>
+                  Build your dream website for your business
+                </p>
+              
+            </div>
+        </div>
+    </div>
+    <section class="section hero" id="home" aria-label="hero">
+      <div class="container">
+        <figure class="hero-banner">
+          <img src="/images/aboutus.png" width="720"  height="673" alt="hero banner" style="position: relative; right:20px;" class="w-100">
+          </figure>
+        <div class="hero-content">
+          <h1 class="h1 hero-title">About us</h1>
+          <p>While running an organization throughout the years we keep on investing on IT infrastructure, 
+            sometimes we don’t find to alternative, or we don’t know how to opt for alternative and we face high 
+            CAPEX for IT Infrastructure.
+            We have ability to bring things back in your budget and also utilize the budget in a manner where you 
+            can take experiences of highly optimized IT infra that we Foster.
+            We build services for you where you will have 100% ownership of it, we will just work on behalf of you.</p>
+          
+        </div>
+        
+
+      </div>
+    </section>
+   
+    <footer>
+    
+        <h5 style="display: inline;">© 2022 OnAirCode. All Right Reserved <a style="color: palevioletred; display: inline;" href="/privacypolicy.html" >privacy policy</a></h5>
+        <h3 class="animation">Developed By - Decoder'S</h3>       
+    </footer>
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    'use strict';
+const addEventOnElem = function (elem, type, callback) {
+  if (elem.length > 1) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
+    }
+  } else {
+    elem.addEventListener(type, callback);
+  }
+}
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navToggler = document.querySelector("[data-nav-toggler]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  navToggler.classList.toggle("active");
+}
+
+addEventOnElem(navToggler, "click", toggleNavbar);
+
+const closeNavbar = function () {
+  navbar.classList.remove("active");
+  navToggler.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+    backTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
+  }
+});
+  </script>
+</body>
+
+</html>
